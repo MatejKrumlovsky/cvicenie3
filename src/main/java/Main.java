@@ -1,14 +1,17 @@
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        /*
         Auto bmw = new Auto();
-        bmw.pocetdveri = 10;
+        bmw.stavNadrze = 100;
+        bmw.jazdi(300);
+        System.out.print(bmw.stavNadrze);
+         */
+        int vek = ZKlavesnice.readInt("Zadaj vek ");
+        System.out.println("vek z klavesnice " + vek);
+        System.out.println("-----------------------------------");
 
-        if(bmw.pocetdveri > 4){
-            System.out.print("velke auto");
-        }
-        else{
-            System.out.print("male auto");
-        }
+        vek = KeyboardInput.readInt("Zadaj vek", 2);
+        System.out.println("vek keyboardinput: "+vek);
     }
 
 }
