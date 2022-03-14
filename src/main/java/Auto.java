@@ -1,14 +1,9 @@
-public class Auto {
-    int pocetkolies;
-    int pocetdveri;
-    public double kapacitaNadrze;
-    public double stavNadrze;
+public class Auto extends Vozidlo{
+    private String modeloveMeno;
 
-    public void jazdi(double vzdialenost){
-        stavNadrze = stavNadrze - vzdialenost * 0.2;
-        if(stavNadrze < 0){
-            stavNadrze = 0;
-
-        }
+    public Auto(String značka, int pocetKolies){
+        super(značka, pocetKolies);
     }
+
 }
+

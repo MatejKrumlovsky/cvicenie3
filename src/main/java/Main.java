@@ -5,13 +5,19 @@ public class Main {
         bmw.stavNadrze = 100;
         bmw.jazdi(300);
         System.out.print(bmw.stavNadrze);
-         */
+
         int vek = ZKlavesnice.readInt("Zadaj vek ");
         System.out.println("vek z klavesnice " + vek);
         System.out.println("-----------------------------------");
 
         vek = KeyboardInput.readInt("Zadaj vek", 2);
         System.out.println("vek keyboardinput: "+vek);
+
+         */
+        Vozidlo bycikel = new Vozidlo("specialized", 2);
+        Vozidlo auto = new Vozidlo("BMW", 4);
+        auto.trubit();
+
     }
 
 }
